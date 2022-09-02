@@ -33,6 +33,14 @@ class ChannelMaker extends DefaultTask {
     @Input
     public Project targetProject;
 
+    public BaseVariant getVariant() {
+        return variant
+    }
+
+    public Project getTargetProject() {
+        return targetProject
+    }
+
     public void setup() {
         description "Make Multi-Channel"
         group "Package"
